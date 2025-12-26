@@ -20,47 +20,53 @@
 <body>
     <header id="header"></header>
 
-    <div class="service-banner" style="background-image: url(images/Emergency.webp);">
-        <div class="container">
-            <div class="row banner-padding">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2>Emergency Dentist</h2>
+    <div class="service-banner" style="background-image: url(Img/service_banners/Emergency-Dental-Care.png);">
+        <div class="row banner-padding">
+            <div class="col-lg-6 col-md-6 col-sm-12 service-heading">
+                <div class="service-heading-strip">
+                    <h2>Emergency Dental Care</h2>
+                    <nav aria-label="breadcrumb" class="breadcrumb">
+                        <li><a href="index.html">Home / </a></li>
+                        <li><a href="#"> Services / </a></li>
+                        <li aria-current="page"> Emergency Dental Care</li>
+                    </nav>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <form id="service-form" class="mb-hidden" action="#" method="post">
-                        <div class="row form-row">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <label for="name">Full Name</label>
-                                <input type="text" class="form-control" id="name" name="name"
-                                    placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone"
-                                    placeholder="Enter phone number" pattern="[0-9]{10}" inputmode="numeric"
-                                    maxlength="10" required>
-                            </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form id="service-form" class="mb-hidden" action="#" method="post">
+                    <div class="row form-row">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Enter your full name" required>
                         </div>
-                        <div class="row form-row">
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <label for="gender">Gender</label>
-                                <select id="gender" name="gender" class="form-control" required>
-                                    <option value="" disabled selected>Select Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Other">Other</option>
-                                    <option value="Prefer not to say">Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <label for="age">Age</label>
-                                <input type="number" class="form-control" id="age" name="age"
-                                    placeholder="Enter your age" min="1" max="120" required>
-                            </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                                placeholder="Enter phone number" pattern="[0-9]{10}" inputmode="numeric" maxlength="10"
+                                required>
                         </div>
-                        <button type="submit" class="mt-3">Submit</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" class="form-control" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="age">Age</label>
+                            <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age"
+                                min="1" max="120" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-3">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -105,14 +111,27 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-12">
                 <div>
-                    <p>We understand your emergency whether it’s a broken tooth, or severe pain or swelling or cracked tooth, or have bitten your tongue or lip, our dentists at Million Smiles Dental are here to help you.  Please call us on 9360 7777 immediately and we will ensure you are seen on the same day.</p>
+                    <p>We understand your emergency whether it’s a broken tooth, or severe pain or swelling or cracked
+                        tooth, or have bitten your tongue or lip, our dentists at Million Smiles Dental are here to help
+                        you. Please call us on 9360 7777 immediately and we will ensure you are seen on the same day.
+                    </p>
 
                     <p><b>Please follow the below tips if you have any of the below emergencies:</b></p>
-                    <p><img src="images/check.png" alt="check-icon">Broken tooth – If you have a broken permanent or adult tooth, then try and keep the tooth moist as much as possible. Try and place the tooth in the socket without touching the root. Call us as soon as possible.</p>
-                    <p><img src="images/check.png" alt="check-icon">Cracked tooth – Try and wash/rinse the tooth with warm water and put cold compression to avoid any swelling and call us as soon as possible.</p>
-                    <p><img src="images/check.png" alt="check-icon">Tongue or lip bite – Clean the area with water and apply a cold compress.</p>
-                    <p><img src="images/check.png" alt="check-icon">Swollen cheek due to a toothache – Swelling is a symptom of some infection in the tooth. Any swelling symptoms require rinsing with warm salt water and try and remove any food stuck gently (do not use any sharp instruments). This requires evaluation by the dentist immediately to avoid further complications.</p>
-                    <p><img src="images/check.png" alt="check-icon">Wisdom tooth pain –This is likely to be caused due to an infection and/or position of the wisdom teeth and the way they have erupted. Please rinse it with warm salt water and/or put an ice pack to compress and get evaluated by the dentist as soon as possible.</p>
+                    <p><img src="images/check.png" alt="check-icon">Broken tooth – If you have a broken permanent or
+                        adult tooth, then try and keep the tooth moist as much as possible. Try and place the tooth in
+                        the socket without touching the root. Call us as soon as possible.</p>
+                    <p><img src="images/check.png" alt="check-icon">Cracked tooth – Try and wash/rinse the tooth with
+                        warm water and put cold compression to avoid any swelling and call us as soon as possible.</p>
+                    <p><img src="images/check.png" alt="check-icon">Tongue or lip bite – Clean the area with water and
+                        apply a cold compress.</p>
+                    <p><img src="images/check.png" alt="check-icon">Swollen cheek due to a toothache – Swelling is a
+                        symptom of some infection in the tooth. Any swelling symptoms require rinsing with warm salt
+                        water and try and remove any food stuck gently (do not use any sharp instruments). This requires
+                        evaluation by the dentist immediately to avoid further complications.</p>
+                    <p><img src="images/check.png" alt="check-icon">Wisdom tooth pain –This is likely to be caused due
+                        to an infection and/or position of the wisdom teeth and the way they have erupted. Please rinse
+                        it with warm salt water and/or put an ice pack to compress and get evaluated by the dentist as
+                        soon as possible.</p>
                 </div>
 
                 <div class="row">
