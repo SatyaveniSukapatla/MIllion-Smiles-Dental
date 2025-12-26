@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Million Smiles Dental for the Top Dental Clinic in Altona Meadows</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link href="styles/service.css" rel="stylesheet" type="text/css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        p>img {
+            width: 25px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <div class="service-banner">
+        <img src="images/finance-optiopns-bg.jpg" alt="General Dentistry" class="service-img">
+        <h2 class="service-heading">Contact Us</h2>
+    </div>
+
+    <div class="container contact-section">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>Take the First Step Toward a Healthier Smile</h2>
+                <p><img src="images/check.png" alt="check-icon">The 1st step towards beautiful healthy smile is to look
+                    after your teeth through everyday home care program.</p>
+                <p><img src="images/check.png" alt="check-icon">The 2nd step is to schedule an appointment to ensure
+                    everything is in place.</p>
+                <p>Please contact our office by phone or complete the appointment request form below. Our scheduling
+                    coordinator will contact you to confirm your appointment.</p>
+
+                <div class="address-details">
+                    <div class="icon-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span><a
+                                href="mailto:info@millionsmilesdental.com.au">info@millionsmilesdental.com.au</a></span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span><a href="tel:0393607777">03 9360 7777</a> | Fax: 03-9315 6051</span>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span><a href="#">Shop 50, 1 Central Ave<br>
+                                Central Square Shopping Centre<br>
+                                Altona Meadows, VIC 3028</a></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <form id="contact-form" action="#" method="post">
+                    <div class="row form-row">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" name="first_name"
+                                placeholder="Enter your first name" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" id="lname" name="last_name"
+                                placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                            <label for="email">Email Id</label><br>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                                placeholder="Enter Phone Number" pattern="[0-9]{10}" inputmode="numeric" required
+                                maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label>Are you a current patient?</label><br>
+                            <input type="radio" id="patient-yes" name="current_patient" value="Yes">
+                            <label for="patient-yes">Yes</label>
+                            <input type="radio" id="patient-no" name="current_patient" value="No">
+                            <label for="patient-no">No</label>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label>Best times to call?</label><br>
+                            <input type="checkbox" id="call-morning" name="best_time[]" value="Morning">
+                            <label for="call-morning">Morning</label>
+                            <input type="checkbox" id="call-afternoon" name="best_time[]" value="Afternoon">
+                            <label for="call-afternoon">Afternoon</label>
+                            <input type="checkbox" id="call-noon" name="best_time[]" value="Noon">
+                            <label for="call-noon">Noon</label>
+                            <input type="checkbox" id="call-evening" name="best_time[]" value="Evening">
+                            <label for="call-evening">Evening</label>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label>Preferred days of the week for appointment?</label><br>
+                            <input type="checkbox" id="day-any" name="preferred_days[]" value="Any Day">
+                            <label for="day-any">Any Day</label>
+                            <input type="checkbox" id="day-mon" name="preferred_days[]" value="Monday">
+                            <label for="day-mon">Mon</label>
+                            <input type="checkbox" id="day-tue" name="preferred_days[]" value="Tuesday">
+                            <label for="day-tue">Tue</label>
+                            <input type="checkbox" id="day-wed" name="preferred_days[]" value="Wednesday">
+                            <label for="day-wed">Wed</label>
+                            <input type="checkbox" id="day-thu" name="preferred_days[]" value="Thursday">
+                            <label for="day-thu">Thu</label>
+                            <input type="checkbox" id="day-fri" name="preferred_days[]" value="Friday">
+                            <label for="day-fri">Fri</label>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label>Weekend Appointments?</label><br>
+                            <input type="checkbox" id="weekend-sat" name="weekend_appointment" value="Saturday">
+                            <label for="weekend-sat">Saturday</label><br>
+                            <small><em>[We appreciate your preference and our friendly scheduling coordinator will get
+                                    in touch with you to confirm and/or reschedule based on availability.]</em></small>
+                        </div>
+                    </div>
+                    <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label>Preferred times for an appointment?</label><br>
+                            <input type="checkbox" id="appt-any" name="appointment_time[]" value="Any Time">
+                            <label for="appt-any">Any Time</label>
+                            <input type="checkbox" id="appt-morning" name="appointment_time[]" value="Morning">
+                            <label for="appt-morning">Morning</label>
+                            <input type="checkbox" id="appt-afternoon" name="appointment_time[]" value="Afternoon">
+                            <label for="appt-afternoon">Afternoon</label>
+                        </div>
+                    </div>
+                    <!-- <div class="row form-row">
+                        <div class="form-group col-12">
+                            <label for="message">Additional Comments / Message</label><br>
+                            <textarea id="message" class="form-control" name="message" row form-rows="5" placeholder="message"></textarea>
+                        </div>
+                    </div> -->
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
