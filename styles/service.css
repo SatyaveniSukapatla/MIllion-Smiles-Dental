@@ -68,9 +68,6 @@ p {
 .contact-section {
   padding: 5% 0;
 }
-.abt-content{
-  padding-top: 5%;
-}
 
 .lg-hidden {
   display: none;
@@ -259,6 +256,17 @@ p a {
 .discover iframe {
   border-radius: 40px;
   width: 80%;
+}
+/* ===============Why Choose Us============== */
+.abt-content{
+  padding-top: 5%;
+}
+.abt-content .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.abt-content img{
+  border-radius: 0px 40px 0px 40px;
 }
 
 /* ===========contact us =============*/
