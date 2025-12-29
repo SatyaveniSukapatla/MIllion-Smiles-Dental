@@ -493,21 +493,21 @@ button:hover{
   .service-section button {
     float: left;
   }
-
+  .service-carousel .item img {
+    border-radius: 0px 30px 0px 0px;
+  }
   .owl-theme .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
     margin: 5px 4px;
   }
+  .service-carousel .owl-theme .owl-nav.disabled+.owl-dots{
+    bottom: 0;
+  }
 
   .footer p {
     width: 100%;
   }
-
-  .container-fluid {
-    text-align: center;
-  }
-
   .filesie {
     float: left;
   }
