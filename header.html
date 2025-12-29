@@ -9,11 +9,49 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
     <link href="styles/index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="Img/fav-icon.png" />
+    <style>
+        .mb-header-hidden {
+            display: block;
+        }
+
+        .lg-header-hidden {
+            display: none;
+        }
+
+        .btn-primary {
+            background-color: transparent !important;
+            padding: 0 !important;
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 991px) {
+            .mb-header-hidden {
+                display: none;
+            }
+            .lg-header-hidden {
+                display: block;
+                padding: 10px 0;
+            }
+            .logo {
+                width: 120px;
+            }
+            .lg-header-hidden .navbar-nav {
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .list-unstyled{
+                text-align: left;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-fluid header">
-        <div class="container">
+
+        <div class="container mb-header-hidden">
             <div class="row">
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
@@ -92,7 +130,9 @@
                                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                                 </li>
                                 <li class="nav-item book-btn">
-                                    <a class="nav-link" href="#">Book Online</a>
+                                    <a class="nav-link"
+                                        href="https://praktika.praktika.net.au/php/onlineBooking/praktika/searchAppointments.php?Apikey=c855c872-98d9-4428-9dd0-802a8ef0da2a"
+                                        target="_blank">Book Online</a>
                                 </li>
                             </ul>
                         </div>
@@ -101,17 +141,17 @@
             </div>
         </div>
 
-        <!-- <div class="container">
-            <div class="row">
+        <div class="container lg-header-hidden">
+            <div class="row align-items-center">
                 <div class="col-6">
                     <a class="navbar-brand" href="index.html">
                         <img src="images/web-logo.png" alt="logo" class="logo">
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex justify-content-end">
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        Toggle Menu
+                        <img src="Img/toggle-menu.png" alt="menu-icon" width="100%">
                     </button>
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -125,88 +165,93 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="why-us.html">Why Us</a>
+                                    <a class="nav-link" href="why-us.html">Why Us</a>
                                 </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item"
-                                                href="general-dentistry-in-altona-meadows.html">General Dentistry</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="laser-dentistry-in-altona-meadows.html">Laser
-                                                Dentistry</a></li>
-                                        <li><a class="dropdown-item" href="oral-hygiene-in-altona-meadows.html">Oral
-                                                Hygiene</a></li>
-                                        <li><a class="dropdown-item" href="root-canal-in-altona-meadows.html">Root
-                                                Canals</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="crown-and-bridge-in-altona-meadows.html">Crown and Bridge</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="cosmetic-dentistry-in-altona-meadows.html">Cosmetic Dentistry</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="teeth-whitening-in-altona-meadows.html">Teeth
-                                                Whitening</a></li>
-                                        <li><a class="dropdown-item" href="smile-makeover-in-altona-meadows.html">Smile
-                                                Makeovers</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="sleep-dentistry-in-altona-meadows.html">Sedation Dentistry</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="teeth-grinding-in-altona-meadows.html">Clenching and Grinding</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="composite-fillings-in-altona-meadows.html">Composite Fillings</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="orthodontics.html">Orthodontics</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="dental-implants-in-altona-meadows.html">Dental Implants</a></li>
-                                        <li><a class="dropdown-item" href="kids-dentist-in-altona-meadows.html">Children
-                                                Dentistry</a></li>
-                                        <li><a class="dropdown-item" href="invisalign.html">Invisalign</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="emergency-dentist-in-altona-meadows.html">Emergency Dental
-                                                Care</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Special Offers
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="finance-options.html">Finance Options</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="afterpay.html">Afterpay</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" href="#servicesAccordion" role="button"
+                                        aria-expanded="false">Services<span>▾</span></a>
+                                    <div class="collapse" id="servicesAccordion">
+                                        <ul class="list-unstyled ps-3">
+                                            <li><a class="nav-link"
+                                                    href="general-dentistry-in-altona-meadows.html">General
+                                                    Dentistry</a></li>
+                                            <li><a class="nav-link" href="laser-dentistry-in-altona-meadows.html">Laser
+                                                    Dentistry</a></li>
+                                            <li><a class="nav-link" href="oral-hygiene-in-altona-meadows.html">Oral
+                                                    Hygiene</a></li>
+                                            <li><a class="nav-link" href="root-canal-in-altona-meadows.html">Root
+                                                    Canals</a></li>
+                                            <li><a class="nav-link" href="crown-and-bridge-in-altona-meadows.html">Crown
+                                                    and Bridge</a></li>
+                                            <li><a class="nav-link"
+                                                    href="cosmetic-dentistry-in-altona-meadows.html">Cosmetic
+                                                    Dentistry</a></li>
+                                            <li><a class="nav-link" href="teeth-whitening-in-altona-meadows.html">Teeth
+                                                    Whitening</a></li>
+                                            <li><a class="nav-link" href="smile-makeover-in-altona-meadows.html">Smile
+                                                    Makeovers</a></li>
+                                            <li><a class="nav-link"
+                                                    href="sleep-dentistry-in-altona-meadows.html">Sedation Dentistry</a>
+                                            </li>
+                                            <li><a class="nav-link"
+                                                    href="teeth-grinding-in-altona-meadows.html">Clenching and
+                                                    Grinding</a></li>
+                                            <li><a class="nav-link"
+                                                    href="composite-fillings-in-altona-meadows.html">Composite
+                                                    Fillings</a></li>
+                                            <li><a class="nav-link" href="orthodontics.html">Orthodontics</a></li>
+                                            <li><a class="nav-link" href="dental-implants-in-altona-meadows.html">Dental
+                                                    Implants</a></li>
+                                            <li><a class="nav-link" href="kids-dentist-in-altona-meadows.html">Children
+                                                    Dentistry</a></li>
+                                            <li><a class="nav-link" href="invisalign.html">Invisalign</a></li>
+                                            <li><a class="nav-link"
+                                                    href="emergency-dentist-in-altona-meadows.html">Emergency Dental
+                                                    Care</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Video Library</a>
+                                    <a class="nav-link d-flex justify-content-between align-items-center"
+                                        data-bs-toggle="collapse" href="#offersAccordion" role="button"
+                                        aria-expanded="false">
+                                        Special Offers
+                                        <span>▾</span>
+                                    </a>
+
+                                    <div class="collapse" id="offersAccordion">
+                                        <ul class="list-unstyled ps-3">
+                                            <li><a class="nav-link" href="finance-options.html">Finance Options</a></li>
+                                            <li><a class="nav-link" href="afterpay.html">Afterpay</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                                 </li>
 
-                                <li class="nav-item book-btn">
-                                    <a class="nav-link btn btn-primary text-white mt-2" href="#">Book Online</a>
+                                <li class="nav-item book-btn mt-3">
+                                    <a class="nav-link"
+                                        href="https://praktika.praktika.net.au/php/onlineBooking/praktika/searchAppointments.php?Apikey=c855c872-98d9-4428-9dd0-802a8ef0da2a"
+                                        target="_blank">Book Online</a>
                                 </li>
+                                
                             </ul>
+
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="blue-strip">
             <span>Now accepting New clients
-                <a href="">Register</a> or <a href="">Call Now</a> </span>
+                <a href="https://praktika.praktika.net.au/php/onlineBooking/praktika/searchAppointments.php?Apikey=c855c872-98d9-4428-9dd0-802a8ef0da2a"
+                    target="_blank">Register</a>
+                or <a href="tel:(03)93607777">Call Now</a> </span>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
