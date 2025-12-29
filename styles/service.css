@@ -141,9 +141,11 @@ p a {
   .lg-hidden {
     display: block;
   }
-
-  .service-banner .banner-padding {
-    padding: 25% 0px !important;
+  .service-banner{
+    height: 400px;
+  }
+  .banner-padding{
+    height: 400px;
   }
 
   #contact-form,
