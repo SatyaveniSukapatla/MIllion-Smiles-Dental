@@ -17,30 +17,36 @@ p {
   padding: 10% 0;
   align-items: center;
 } */
-.banner-padding{
+.banner-padding {
   height: 500px;
 }
-.service-heading{
+
+.service-heading {
   display: flex;
   height: 100%;
   align-items: end;
 }
-.service-heading-strip{
+
+.service-heading-strip {
   background-color: #fff;
   display: inline-block;
   padding: 10px 20px 0;
   border-radius: 0 40px 0 0;
 }
-.breadcrumb{
+
+.breadcrumb {
   gap: 10px;
 }
-.breadcrumb a{
+
+.breadcrumb a {
   text-decoration: none;
   color: #3e1651;
 }
+
 #service-form {
   background-color: #ffffff36;
 }
+
 .mb-hidden {
   margin: 10% 15% 10%;
 }
@@ -114,7 +120,7 @@ p a {
   color: #3e1651;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 
   .service-content,
   .finance-content,
@@ -141,10 +147,12 @@ p a {
   .lg-hidden {
     display: block;
   }
-  .service-banner{
+
+  .service-banner {
     height: 400px;
   }
-  .banner-padding{
+
+  .banner-padding {
     height: 400px;
   }
 
@@ -162,11 +170,12 @@ p a {
     width: 25px;
     height: 25px;
   }
-    .testimonial {
-        flex: 0 0 100% !important;
-        padding: 10px !important;
-        margin: 10px 0px !important;
-    }
+
+  .testimonial {
+    flex: 0 0 100% !important;
+    padding: 10px !important;
+    margin: 10px 0px !important;
+  }
 }
 
 /* finance-Options page */
@@ -259,15 +268,18 @@ p a {
   border-radius: 40px;
   width: 80%;
 }
+
 /* ===============Why Choose Us============== */
-.abt-content{
+.abt-content {
   padding-top: 5%;
 }
+
 .abt-content .row {
   align-items: center;
   justify-content: space-between;
 }
-.abt-content img{
+
+.abt-content img {
   border-radius: 0px 40px 0px 40px;
 }
 
@@ -353,4 +365,3 @@ button[type="submit"] {
   background-color: #f39c12;
   transition: background 0.3s ease;
 }
-
