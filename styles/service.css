@@ -55,14 +55,16 @@ p {
   content: "";
   display: block;
   height: 4px;
-  background: linear-gradient(to right,
-      #612b7b 16.66%,
-      #20448a 16.67%,
-      #2ea8e3 32.33%,
-      #49a949 50%,
-      #fdcd1a 60%,
-      #f39c12 70.66%,
-      #e74c3c 85.7%);
+  background: linear-gradient(
+    to right,
+    #612b7b 16.66%,
+    #20448a 16.67%,
+    #2ea8e3 32.33%,
+    #49a949 50%,
+    #fdcd1a 60%,
+    #f39c12 70.66%,
+    #e74c3c 85.7%
+  );
 }
 
 .service-img {
@@ -118,64 +120,6 @@ p {
 
 p a {
   color: #3e1651;
-}
-
-@media screen and (max-width: 767px) {
-
-  .service-content,
-  .finance-content,
-  .contact-section {
-    padding: 5% 5% !important;
-  }
-
-  .sidebar-container {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  #sidebar {
-    width: 100%;
-    box-shadow: 0px 0px 5px 0px #ccc;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-
-  .mb-hidden {
-    display: none;
-  }
-
-  .lg-hidden {
-    display: block;
-  }
-
-  .service-banner {
-    height: 400px;
-  }
-
-  .banner-padding {
-    height: 400px;
-  }
-
-  #contact-form,
-  #service-form {
-    margin-left: 0px !important;
-    padding: 30px 20px;
-  }
-
-  .service-form {
-    margin: 10px 20px;
-  }
-
-  .service-list img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .testimonial {
-    flex: 0 0 100% !important;
-    padding: 10px !important;
-    margin: 10px 0px !important;
-  }
 }
 
 /* finance-Options page */
@@ -269,18 +213,8 @@ p a {
   width: 80%;
 }
 
-/* ===============Why Choose Us============== */
-.abt-content {
-  padding-top: 5%;
-}
-
-.abt-content .row {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.abt-content img {
-  border-radius: 0px 40px 0px 40px;
+.container-padding {
+  padding: 5% 0;
 }
 
 /* ===========contact us =============*/
@@ -351,8 +285,8 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   margin-right: 20px;
   font-weight: 500;
 }
@@ -364,4 +298,108 @@ small {
 button[type="submit"] {
   background-color: #f39c12;
   transition: background 0.3s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .service-content,
+  .finance-content,
+  .contact-section {
+    padding: 5% 5% !important;
+  }
+
+  .sidebar-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #sidebar {
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .mb-hidden {
+    display: none;
+  }
+
+  .lg-hidden {
+    display: block;
+  }
+
+  .service-banner {
+    height: 300px;
+  }
+
+  .banner-padding {
+    height: 300px;
+  }
+
+  #contact-form,
+  #service-form {
+    margin-left: 0px !important;
+    padding: 30px 20px;
+  }
+
+  .service-form {
+    margin: 10px 20px;
+  }
+
+  .service-list img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .testimonial {
+    flex: 0 0 100% !important;
+    padding: 10px !important;
+    margin: 10px 0px !important;
+  }
+
+  /* Finance Options */
+  .finance-content img {
+    width: 100% !important;
+    border-radius: 40px;
+  }
+
+  .payment-options {
+    gap: 15px !important;
+  }
+
+  .payment-box {
+    width: 47%;
+    gap: 10px;
+    padding: 15px;
+  }
+  .payment-box .img-box {
+    background: #1f4489;
+    width: 50px;
+    height: 50px;
+  }
+
+  .img-box i {
+    font-size: 25px;
+  }
+  .payment-box p {
+    font-size: 15px !important;
+  }
+
+  /*After pay  */
+  .offer img {
+    width: 100% !important;
+  }
+
+  .offer .appointment-btn {
+    margin-bottom: 15px;
+  }
+
+  .container-padding {
+    padding: 3% 1%;
+  }
+
+  .discover iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+  }
 }

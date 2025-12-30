@@ -27,7 +27,10 @@ p {
 
 h1,
 h2,
-h3, h4, h5, h6{
+h3,
+h4,
+h5,
+h6 {
   font-family: "Glancyr", serif;
 }
 
@@ -40,12 +43,15 @@ h4 {
   font-size: 35px;
   font-weight: 400;
 }
-h5{
+
+h5 {
   font-size: 30px;
 }
-h6{
+
+h6 {
   font-size: 24px;
 }
+
 p {
   font-size: 20px;
 }
@@ -58,10 +64,12 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-button:hover{
+
+button:hover {
   background-color: #1f4489 !important;
   color: #fff !important;
 }
+
 /* ------header------ */
 .header {
   padding: 0;
@@ -306,6 +314,7 @@ button:hover{
 .box {
   background: black;
 }
+
 .box img {
   width: 100%;
   height: 100%;
@@ -429,7 +438,7 @@ button:hover{
   width: 80%;
 }
 
-.footer h2{
+.footer h2 {
   font-size: 35px;
 }
 
@@ -480,11 +489,15 @@ button:hover{
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   h4 {
     font-size: 24px;
+  }
+
+  h6 {
+    font-size: 18px;
   }
 
   p {
@@ -498,32 +511,51 @@ button:hover{
   .service-section button {
     float: left;
   }
+
   .service-carousel .item img {
     border-radius: 0px 30px 0px 0px;
   }
+
   .owl-theme .owl-dots .owl-dot span {
     width: 8px;
     height: 8px;
     margin: 5px 4px;
   }
-  .service-carousel .owl-theme .owl-nav.disabled+.owl-dots{
+
+  .service-carousel .owl-theme .owl-nav.disabled+.owl-dots {
     bottom: 0;
   }
 
   .footer p {
     width: 100%;
   }
+
+  .footer h2 {
+    font-size: 30px;
+  }
+
+  .Copy-right {
+    text-align: center !important;
+  }
+
   .filesie {
-    float: left;
+    text-align: center !important;
+  }
+
+  .filesie span {
+    float: none !important;
+  }
+
+  .copyright span {
+    font-size: 14px;
   }
 
   .testimonial {
-    padding: 10px;
-    font-size: 0.9rem;
-    border-left: 3px solid #2ca9e1;
-    border-right: 3px solid #2ca9e1;
-    flex: 0 0 95%;
-    margin: 10px;
+    flex: 0 0 100% !important;
+    margin: 0px !important;
+    padding: 20px 20px !important;
+    border-left: 5px solid #2ca9e1 !important;
+    border-right: 5px solid #2ca9e1 !important;
   }
 
   .location {
@@ -595,10 +627,39 @@ button:hover{
     grid-area: 6 / 3 / 10 / 4;
   }
 
+  .abt-sec,
+  .service-section,
+  .team-section,
+  .footer,
+  .testimonials {
+    padding: 5% 1%;
+  }
 }
 
-
 /* why-us page */
+.why-us-banner {
+  background-image: url(../Img/why-us-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: end;
+}
+
+.abt-content {
+  padding-top: 5%;
+}
+
+.abt-content .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.abt-content img {
+  border-radius: 0px 40px 0px 40px;
+}
+
 .icon-box {
   display: flex;
   align-items: flex-start;
@@ -610,4 +671,21 @@ button:hover{
   margin-top: 2px;
   width: 25px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .why-us-banner {
+    height: 300px;
+  }
+
+  .icon-box a,
+  .icon-box span {
+    font-size: 16px;
+  }
+
+  .icon-box img {
+    margin-top: 3px;
+    width: 20px;
+    margin-right: 6px;
+  }
 }
