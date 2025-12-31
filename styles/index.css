@@ -742,11 +742,16 @@ button:hover {
   }
   .service-cards img {
     border-radius: 0px 30px 0px 0px;
-}
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-  .why-us-banner, .service-hero-banner, .contact-banner, .finance-banner, .service-banner.banner-padding, .afterpay-banner {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .why-us-banner,
+  .service-hero-banner,
+  .contact-banner,
+  .finance-banner,
+  .service-banner.banner-padding,
+  .afterpay-banner {
     height: 400px;
   }
 }
