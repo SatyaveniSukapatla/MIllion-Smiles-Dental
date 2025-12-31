@@ -15,7 +15,8 @@
 /* Pretendard Medium */
 @font-face {
   font-family: "Pretendard";
-  src: url("../Fonts/pretendard font/pretendard font/Pretendard-Medium.otf") format("opentype");
+  src: url("../Fonts/pretendard font/pretendard font/Pretendard-Medium.otf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -141,14 +142,16 @@ button:hover {
   content: "";
   display: block;
   height: 4px;
-  background: linear-gradient(to right,
-      #612b7b 16.66%,
-      #20448a 16.67%,
-      #2ea8e3 32.33%,
-      #49a949 50%,
-      #fdcd1a 60%,
-      #f39c12 70.66%,
-      #e74c3c 85.7%);
+  background: linear-gradient(
+    to right,
+    #612b7b 16.66%,
+    #20448a 16.67%,
+    #2ea8e3 32.33%,
+    #49a949 50%,
+    #fdcd1a 60%,
+    #f39c12 70.66%,
+    #e74c3c 85.7%
+  );
 }
 
 .logos {
@@ -170,16 +173,20 @@ button:hover {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left,
-      rgba(255, 255, 255, 0),
-      rgb(255, 255, 255));
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0),
-      rgb(255, 255, 255));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
 }
 
 .logo_items {
@@ -256,12 +263,12 @@ button:hover {
   color: #333;
 }
 
-.service-carousel .owl-theme .owl-nav.disabled+.owl-dots {
+.service-carousel .owl-theme .owl-nav.disabled + .owl-dots {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.owl-dot:hover{
+.owl-dot:hover {
   background-color: transparent !important;
 }
 /* -------Location------- */
@@ -482,8 +489,8 @@ button:hover {
 /* ---------- media quaries---------- */
 
 @media screen and (max-width: 767px) {
-  .hero-banner{
-    background-image: url(../Img/home-mb-bg.png);
+  .hero-banner {
+    background-image: url(../Img/Homepage_mb.png);
   }
   .hero-banner h1 {
     font-size: 40px;
@@ -527,7 +534,7 @@ button:hover {
     margin: 5px 4px;
   }
 
-  .service-carousel .owl-theme .owl-nav.disabled+.owl-dots {
+  .service-carousel .owl-theme .owl-nav.disabled + .owl-dots {
     bottom: 0;
   }
 
@@ -678,11 +685,38 @@ button:hover {
   margin-right: 10px;
 }
 
+/* ===========services page============ */
+.service-hero-banner {
+  background-image: url(../Img/Services_Bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: end;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-item {
+  width: 24%;
+}
+.service-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 60px 0px 0px;
+}
+.service-cards p {
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .why-us-banner {
-  background-image: url(../Img/home-mb-bg.png);
-}
-  .why-us-banner {
+    background-image: url(../Img/whyus-mb-bg.png);
     height: 300px;
   }
 
@@ -695,5 +729,24 @@ button:hover {
     margin-top: 3px;
     width: 20px;
     margin-right: 6px;
+  }
+  .service-hero-banner {
+    background-image: url(../Img/Services_Mobile-bg.png);
+    height: 300px;
+  }
+  .service-cards {
+    gap: 15px 0px;
+  }
+  .service-item {
+    width: 47%;
+  }
+  .service-cards img {
+    border-radius: 0px 30px 0px 0px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .why-us-banner, .service-hero-banner, .contact-banner, .finance-banner, .service-banner.banner-padding, .afterpay-banner {
+    height: 400px;
   }
 }
