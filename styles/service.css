@@ -300,6 +300,27 @@ button[type="submit"] {
   transition: background 0.3s ease;
 }
 
+/* ===============Services page================= */
+
+.service-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-item{
+  width: 24%;
+}
+.service-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 60px 0px 0px;
+}
+.service-cards p{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ===============Media Quaries================= */
 @media screen and (max-width: 767px) {
   .service-content,
   .finance-content,
@@ -340,9 +361,8 @@ button[type="submit"] {
     margin-left: 0px !important;
     padding: 30px 20px;
   }
-
   .service-form {
-    margin: 10px 20px;
+    margin: 25px 20px 0px;
   }
 
   .service-list img {

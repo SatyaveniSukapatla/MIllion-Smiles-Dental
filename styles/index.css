@@ -261,7 +261,9 @@ button:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.owl-dot:hover{
+  background-color: transparent !important;
+}
 /* -------Location------- */
 .location {
   background-image: url(../images/msd-map.png);
@@ -480,6 +482,9 @@ button:hover {
 /* ---------- media quaries---------- */
 
 @media screen and (max-width: 767px) {
+  .hero-banner{
+    background-image: url(../Img/home-mb-bg.png);
+  }
   .hero-banner h1 {
     font-size: 40px;
   }
@@ -674,6 +679,9 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
+  .why-us-banner {
+  background-image: url(../Img/home-mb-bg.png);
+}
   .why-us-banner {
     height: 300px;
   }
