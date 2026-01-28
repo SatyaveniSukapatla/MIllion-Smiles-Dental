@@ -32,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Glancyr", serif;
+  font-family: "Pretendard", sans-serif;
 }
 
 h2 {
@@ -66,10 +66,10 @@ button {
   transition: all 0.3s ease;
 }
 
-button:hover {
+/* button:hover {
   background-color: #1f4489 !important;
   color: #fff !important;
-}
+} */
 
 /* ------header------ */
 .header {
@@ -135,7 +135,25 @@ button:hover {
 .hero-banner button {
   background-color: #7bd6d0;
 }
-
+/*Banner Carousel */
+.carousel-caption {
+  top: 43%;
+    color: #000000 !important;
+    text-align: left !important;
+}
+.first-slide{
+  top: 40% !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: 80% 80% !important;
+    background-color: #3e1651;
+    border-radius: 100px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 100% !important;
+  }
 /* -------logo-carousel------ */
 .logo-carousel::after,
 .location::after {
