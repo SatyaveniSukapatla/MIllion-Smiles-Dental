@@ -137,23 +137,28 @@ button {
 }
 /*Banner Carousel */
 .carousel-caption {
-  top: 43%;
-    color: #000000 !important;
-    text-align: left !important;
+  top: 42%;
+  color: #000000 !important;
+  text-align: left !important;
 }
-.first-slide{
+.carousel-caption h1 {
+  font-size: 50px;
+   font-weight: 700 !important;
+}
+.first-slide {
   top: 40% !important;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    background-size: 80% 80% !important;
-    background-color: #3e1651;
-    border-radius: 100px;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-size: 80% 80% !important;
+  background-color: #3e1651;
+  border-radius: 100px;
 }
 .carousel-indicators [data-bs-target] {
-    width: 9px !important;
-    height: 9px !important;
-    border-radius: 100% !important;
-  }
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 100% !important;
+}
 /* -------logo-carousel------ */
 .logo-carousel::after,
 .location::after {
@@ -510,7 +515,7 @@ button {
   .hero-banner {
     background-image: url(../Img/Homepage_mb.png);
   }
-  .hero-banner h1 {
+  h1 {
     font-size: 40px;
   }
 

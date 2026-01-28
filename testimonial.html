@@ -2,135 +2,193 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link href="styles/index.css" rel="stylesheet" type="text/css">
   <style>
-    /* testimonial */
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  padding: 50px 0;
-}
+    .testimonial-carousel {
+      background-color: #f5851f;
+      padding: 100px;
+    }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.testimonial {
-  flex: 0 0 40%;
-  text-align: center;
-  background: #fff;
-  margin: 20px;
-  padding: 50px 60px;
-  border-radius: 0px 30px;
-  border-left: 10px solid #2ca9e1;
-  border-right: 10px solid #2ca9e1;
-}
-
-.stars {
-  color: gold;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 7%;
-  transform: translateY(-50%);
-  background: #004f4f;
-  color: white;
-  border: none;
-  padding: 5px 13px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 18px;
-}
-
-.carousel-btn.left {
-  left: 10px;
-}
-
-.carousel-btn.right {
-  right: 10px;
-}
-
+    .testimonial-carousel .carousel-inner {
+      background-color: #ffffff;
+      height: 500px;
+      padding: 50px 250px;
+    }
+    
+    .testimonial-block {
+      text-align: center;
+    }
+    .testimonial-carousel h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .testimonial-carousel .carousel-indicators [data-bs-target] {
+    width: 20px !important;
+    height: 4px !important;
+    border-radius: 0% !important;
+    background-color: #f5851f;
+  }
   </style>
-
 </head>
 
 <body>
-  <div class="carousel-container">
-    <div class="carousel-track">
-      <div class="testimonial">
-        <h3>Kate H</h3>
-        <p class="role">Customer</p>
-        <div class="stars">★★★★★</div>
-        <p>That was an awesome experience! The easiest crown I have ever had. Dr. Barli made me
-          laugh even
-          though I was very nervous.</p>
+  <div class="testimonial-carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
       </div>
-      <div class="testimonial">
-        <h3>John D</h3>
-        <p class="role">Patient</p>
-        <div class="stars">★★★★★</div>
-        <p>Wonderful care and attention to detail. I felt completely comfortable throughout the
-          process.</p>
+      <div class="carousel-inner">
+        <h2>Why people love Million Smiles Dental</h2>
+        <div class="carousel-item active">
+          <div class="testimonial-block">
+            <h3>Kate H</h3>
+            <p class="role">Customer</p>
+            <div class="stars">★★★★★</div>
+            <p>That was an awesome experience! The easiest crown I have ever had. Dr. Barli made me laugh even
+              though I was very nervous.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-block">
+            <h3>Viknesh Sivaguru</h3>
+            <p class="role">Patient</p>
+            <div class="stars">★★★★★</div>
+            <p>Absolutely wonderful experience with Dr. Sameer Panjvani! He’s extremely skilled and truly cares
+              about his patients. The team at Million Dental Smiles is friendly and efficient, and the clinic
+              has a great atmosphere. Highly recommend for anyone needing dental care.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-block">
+            <h3>Saakshi Nikhanj</h3>
+            <p class="role">Customer</p>
+            <div class="stars">★★★★★</div>
+            <p>Entire staff is very nice and caring. Had the pleasure of dealing with Manju who was courteous
+              and polite. Dr Sowmya was very patient with me and shared all details and answered all my
+              queries. Don't waste time elsewhere.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-block">
+            <h3>Shruti Thakur</h3>
+            <p class="role">Customer</p>
+            <div class="stars">★★★★★</div>
+            <p>Dr Archana and the team at million smiles dental clinic were fantastic. DA Nikki was so nice and
+              empathetic. The renovated clinic is absolutely stunning and spacious with the new CBCT machine.
+              Absolutely love the new vibe of the clinic.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-block">
+            <h3>Prasad Manjrekar</h3>
+            <p class="role">Customer</p>
+            <div class="stars">★★★★★</div>
+            <p>Excellent service 👌🏻…… very friendly and humble people right from reception to the dentist!!!
+              Explained all aspects so well and treated so nicely; less of pain and more of comfort!!! Thank
+              you team Millions Smile Dentists 👍 …</p>
+          </div>
+        </div>
       </div>
-      <div class="testimonial">
-        <h3>Sophia L</h3>
-        <p class="role">Customer</p>
-        <div class="stars">★★★★★</div>
-        <p>Amazing service! The staff were professional and kind, making the whole experience
-          stress-free.
-        </p>
-      </div>
-      <div class="testimonial">
-        <h3>Sophia L</h3>
-        <p class="role">Customer</p>
-        <div class="stars">★★★★★</div>
-        <p>Amazing service! The staff were professional and kind, making the whole experience
-          stress-free.
-        </p>
-      </div>
-      <div class="testimonial">
-        <h3>Sophia L</h3>
-        <p class="role">Customer</p>
-        <div class="stars">★★★★★</div>
-        <p>Amazing service! The staff were professional and kind, making the whole experience
-          stress-free.
-        </p>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-btn left">&#10094;</button>
-    <button class="carousel-btn right">&#10095;</button>
   </div>
 
-  <script>
-    const track = document.querySelector(".carousel-track");
-const testimonials = Array.from(track.children);
-const nextButton = document.querySelector(".carousel-btn.right");
-const prevButton = document.querySelector(".carousel-btn.left");
-let currentIndex = 0;
 
-function updateCarousel() {
-  const width = testimonials[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${currentIndex * width}px)`;
-}
-
-nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % testimonials.length;
-  updateCarousel();
-});
-
-prevButton.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
-  updateCarousel();
-});
-
-window.addEventListener("resize", updateCarousel);
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Reviews - Million Smiles Dental</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#f7f7f7; }
+  #google-reviews { max-width:900px; margin:auto; padding:20px; }
+  .review-box {
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.05);
+  }
+  .review-author { font-weight:bold; }
+  .review-rating { color:#f4b400; margin:5px 0; }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">What Our Patients Say</h2>
+
+<div id="google-reviews">Loading reviews...</div>
+
+// Google Places API
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
+<script>
+function loadGoogleReviews() {
+  const service = new google.maps.places.PlacesService(document.createElement('div'));
+
+  service.getDetails({
+    placeId: "ChIJw7AAvdGJ1moRf0mWkkwpins",
+    fields: ["reviews","rating","user_ratings_total","name"]
+  }, function(place, status) {
+    if (status !== google.maps.places.PlacesServiceStatus.OK) {
+      document.getElementById("google-reviews").innerHTML = "Unable to load reviews.";
+      return;
+    }
+
+    let reviewsHTML = "";
+
+    // Sort newest first
+    place.reviews.sort((a,b) => b.time - a.time);
+
+    // Show first 5 reviews
+    place.reviews.slice(0,5).forEach(review => {
+      reviewsHTML += `
+        <div class="review-box">
+          <div class="review-author">${review.author_name}</div>
+          <div class="review-rating">⭐ ${review.rating} / 5</div>
+          <div class="review-text">${review.text}</div>
+        </div>
+      `;
+    });
+
+    document.getElementById("google-reviews").innerHTML = reviewsHTML;
+  });
+}
+
+window.onload = loadGoogleReviews;
+</script>
+
+</body>
+</html> -->
