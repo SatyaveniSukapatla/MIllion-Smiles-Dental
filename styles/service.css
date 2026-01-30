@@ -37,6 +37,7 @@ p {
 }
 
 #service-form {
+  display: none;
   background-color: #ffffff36;
 }
 
@@ -212,7 +213,7 @@ background-position .finance-content .row {
 }
 
 .container-padding {
-  padding: 5% 0;
+  padding: 2% 0;
 }
 
 /* ===========contact us =============*/
