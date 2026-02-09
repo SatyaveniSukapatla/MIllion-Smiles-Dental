@@ -175,7 +175,7 @@ background-position .finance-content .row {
 
 /* AfterPAy offers */
 .afterpay-banner {
-  background-image: url(../Img/service_banners/Available_Afterpay.png);
+  background-image: url(../Img/service-banners/Available_Afterpay.png);
 }
 
 .offer,
@@ -373,67 +373,67 @@ button[type="submit"] {
 /* ===============Media Quaries================= */
 @media screen and (max-width: 767px) {
   .general-dentistry-banner {
-    background-image: url(../Img/service_banners/general-dentistry-mb.png);
+    background-image: url(../Img/service-banners/General-Dentistry-mb.png);
   }
 
   .laser-dentistry-banner {
-    background-image: url(../Img/service_banners/LaserDentistry_mb.png);
+    background-image: url(../Img/service-banners/Laser-Dentistry-mb.png);
   }
 
   .oral-hygiene-banner {
-    background-image: url(../Img/service_banners/OralHygiene_mb.png);
+    background-image: url(../Img/service-banners/Oral-Hygeine-mb.png);
   }
 
   .root-canal-banner {
-    background-image: url(../Img/service_banners/RootCanal_mb.png);
+    background-image: url(../Img/service-banners/Root-Canal-mb.png);
   }
 
   .crown-bridge-banner {
-    background-image: url(../Img/service_banners/Crown&Bridges_mb.png);
+    background-image: url(../Img/service-banners/Crown-mb.png);
   }
 
   .cosmetic-dentistry-banner {
-    background-image: url(../Img/service_banners/CosmeticDentistry_mb.png);
+    background-image: url(../Img/service-banners/Cosmetic_Dentistry-mb.png);
   }
 
   .teeth-whitening-banner {
-    background-image: url(../Img/service_banners/TeethWhitening_mb.png);
+    background-image: url(../Img/service-banners/Teeth-Whitening-mb.png);
   }
 
   .smile-makeover-banner {
-    background-image: url(../Img/service_banners/SmileMakeovers_mb.png);
+    background-image: url(../Img/service-banners/Smile-makeover-mb.png);
   }
 
   .sedation-dentistry-banner {
-    background-image: url(../Img/service_banners/SedationDentistry_mb.png);
+    background-image: url(../Img/service-banners/SedationDentistry-mb.png);
   }
 
   .clenching-grinding-banner {
-    background-image: url(../Img/service_banners/Clenching&Grinding_mb.png);
+    background-image: url(../Img/service-banners/Clenching&Grinding-mb.png);
   }
 
   .composite-fillings-banner {
-    background-image: url(../Img/service_banners/Compositefillings__mb.png);
+    background-image: url(../Img/service-banners/Composite-Filling-mb.png);
   }
 
   .orthodontics-banner {
-    background-image: url(../Img/service_banners/Orthodontics_mb.png);
+    background-image: url(../Img/service-banners/Orthodontics-mb.png);
   }
 
   .dental-implants-banner {
-    background-image: url(../Img/service_banners/DentalImplants_mb.png);
+    background-image: url(../Img/service-banners/Dental-Implants-mb.png);
   }
 
   .kids-dentist-banner {
-    background-image: url(../Img/service_banners/ChildDentistry_mb.png);
+    background-image: url(../Img/service-banners/Children-Dentistry-mb.png);
   }
 
   .invisalign-banner {
-    background-image: url(../Img/service_banners/Invisalign_mb.png);
+    background-image: url(../Img/service-banners/Invisalign-mb.png);
   }
 
   .emergency-dentist-banner {
-    background-image: url(../Img/service_banners/Emergency_mb.png);
+    background-image: url(../Img/service-banners/Emergency-mb.png);
   }
 
   .service-content,
