@@ -25,7 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 
     // Email settings
-    $admin_email = "admin@yourdomain.com"; // change this to admin email
+    $admin_email = "admin@filesie.com, info@millionsmilesdental.com.au";
+ // change this to admin email
     $subject_admin = "New Appointment Request";
     $subject_user = "Thank You for Contacting Us";
 
@@ -51,10 +52,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Our team will contact you soon.
 
     Regards,
-    Your Clinic Team
+    Million Smiles Dental, Altona Meadows.
     ";
 
-    $headers = "From: no-reply@yourdomain.com\r\n";
+    $headers = "From: Million Smiles Dental Altona Meadows <info@millionsmilesdental.com.au>\r\n";
 
     // Send Emails
     mail($admin_email, $subject_admin, $message_admin, $headers);

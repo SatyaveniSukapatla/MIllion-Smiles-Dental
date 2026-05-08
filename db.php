@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "root";   // change if hosting
-$pass = "";       // change password
-$db   = "your_database_name"; // data base name
+$user = "u834764913_Filesie_Admin";   // change if hosting
+$pass = "Dzire@4595";       // change password
+$db   = "u834764913_MSD26DB"; // data base name
 
 $conn = new mysqli($host, $user, $pass, $db);
 
